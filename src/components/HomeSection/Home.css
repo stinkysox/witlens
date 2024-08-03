@@ -1,0 +1,55 @@
+.home-main-bg {
+  border: 5px solid black;
+  min-height: 100vh;
+  padding: 6px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-image-container {
+  height: 40vh;
+  margin-top: 10px;
+  background-image: url("https://i.postimg.cc/SNPxZDLz/20240127-015836-0000.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.gradient-container h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 36px;
+}
+
+.gradient-container h2 {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+
+  font-family: "Merriweather", serif;
+}
+
+.explore-btn {
+  margin-top: 6px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  z-index: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.explore-btn:hover {
+  background-color: #921a40;
+  color: beige;
+}
