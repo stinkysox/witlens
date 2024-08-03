@@ -1,53 +1,26 @@
-import image1 from "./image1.jpg";
-import image2 from "./image2.jpg";
-import image3 from "./image3.jpg";
-import image4 from "./image4.jpg";
-import image5 from "./image5.jpg";
-import image6 from "./image6.jpg";
-import image7 from "./image7.jpg";
-import image8 from "./image8.jpg";
-import image9 from "./image9.jpg";
-import image10 from "./image10.jpg";
-import image11 from "./image11.jpg";
-import image12 from "./image12.jpg";
-import image13 from "./image13.jpg";
-import image14 from "./image14.jpg";
-import image15 from "./image15.jpg";
-import image16 from "./image16.jpg";
-import image17 from "./image17.jpg";
-import image18 from "./image18.jpg";
-import image19 from "./image19.jpg";
-import image20 from "./image20.jpg";
-import image21 from "./image21.jpg";
-import image22 from "./image22.jpg";
-import image23 from "./image23.jpg";
-import image24 from "./image24.jpg";
-import image25 from "./image25.jpg";
-
 export const images = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-  image8,
-  image9,
-  image10,
-  image11,
-  image12,
-  image13,
-  image14,
-  image15,
-  image16,
-  image17,
-  image18,
-  image19,
-  image20,
-  image21,
-  image22,
-  image23,
-  image24,
-  image25,
+  "https://i.postimg.cc/TwGrtNtq/Picsart-23-04-27-10-22-54-562.jpg",
+  "https://i.postimg.cc/Sx3dfr0D/Picsart-23-04-26-16-10-22-250.jpg",
+  "https://i.postimg.cc/mkpC2LB8/Picsart-23-04-23-14-57-44-761.jpg",
+  "https://i.postimg.cc/4Nnp29QM/Picsart-23-03-16-12-27-42-471.jpg",
+  "https://i.postimg.cc/d0cd0ScP/Picsart-23-04-26-15-33-37-142.jpg",
+  "https://i.postimg.cc/DzQG4d7W/Picsart-23-05-23-17-34-18-496.jpg",
+  "https://i.postimg.cc/5yrQWsSr/Picsart-23-05-11-02-05-28-035.jpg",
+  "https://i.postimg.cc/25xqSkxh/Picsart-23-04-29-16-03-19-754.jpg",
+  "https://i.postimg.cc/XJHp9smv/Picsart-23-05-05-12-15-24-096.jpg",
+  "https://i.postimg.cc/xjZXCFLx/Picsart-23-06-22-17-41-50-276.jpg",
+  "https://i.postimg.cc/g2VjgzQQ/Picsart-23-07-03-22-23-43-837.jpg",
+  "https://i.postimg.cc/8CT598V5/Picsart-23-06-16-15-15-03-658.jpg",
+  "https://i.postimg.cc/HxxLWQn1/Picsart-23-07-09-02-19-39-480.jpg",
+  "https://i.postimg.cc/zvHXK8Td/Picsart-23-06-10-13-35-05-441.jpg",
+  "https://i.postimg.cc/G903jVQb/Picsart-23-06-22-17-12-07-007.jpg",
+  "https://i.postimg.cc/XNrwQ58P/Picsart-23-04-30-14-06-28-618.jpg",
+  "https://i.postimg.cc/Pf01cqV5/Picsart-23-12-07-22-56-56-584.jpg",
+  "https://i.postimg.cc/sgr7jNrF/Picsart-23-11-22-00-28-02-402.jpg",
+  "https://i.postimg.cc/VkWMdWfJ/Picsart-23-12-13-17-48-30-213.jpg",
+  "https://i.postimg.cc/FKPLxFJm/Picsart-23-07-10-20-51-03-196-2.jpg",
+  "https://i.postimg.cc/JnGBYwbX/Picsart-23-09-08-23-49-36-641.jpg",
+  "https://i.postimg.cc/y8jgV6j9/IMG-20230817-133548136.jpg",
+  "https://i.postimg.cc/vmm1DR2K/Picsart-23-07-11-23-36-09-505.jpg",
+  "https://i.postimg.cc/k46BFQmF/Picsart-23-09-19-23-16-50-242.jpg",
 ];

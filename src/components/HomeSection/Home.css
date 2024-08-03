@@ -1,11 +1,22 @@
-.home-main-bg {
-  border: 5px solid black;
-  min-height: 100vh;
-  padding: 6px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@keyframes expandHeight {
+  0% {
+    height: 0vh;
+  }
+
+  50% {
+    height: 30vh;
+  }
+  100% {
+    height: 40vh;
+  }
+}
+
+.home-image-container {
+  margin-top: 10px;
+  background-image: url("https://i.postimg.cc/SNPxZDLz/20240127-015836-0000.png");
+  background-size: cover;
+  background-position: center;
+  animation: expandHeight 8s ease;
 }
 
 .home-image-container {
@@ -20,14 +31,13 @@
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .gradient-container h2 {
-  font-size: 16px;
+  font-size: px;
   font-weight: 600;
   font-style: italic;
-
   font-family: "Merriweather", serif;
 }
 
