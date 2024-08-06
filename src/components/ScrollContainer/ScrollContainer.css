@@ -1,4 +1,4 @@
-/* ScrollContainer.css */
+/* Resetting margins and padding */
 body,
 html {
   margin: 0;
@@ -6,6 +6,7 @@ html {
   overflow: auto;
 }
 
+/* Heading styles */
 .heading {
   color: navajowhite;
   text-align: center;
@@ -13,8 +14,10 @@ html {
   padding: 10px;
   margin-top: 10px;
   font-weight: 900;
+  font-family: "Merriweather", serif;
 }
 
+/* Wavy background container */
 .wavy-background {
   width: 100%;
   height: 100vh;
@@ -27,15 +30,17 @@ html {
   display: block;
 }
 
+/* Making sure content is scrollable */
 .relative.z-10 {
   width: 100%;
   height: 100%;
   overflow: auto;
 }
 
+/* Cards container for responsive grid layout */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   justify-content: center;
   padding: 20px;
@@ -43,6 +48,7 @@ html {
   row-gap: 50px;
 }
 
+/* Card styles for hover effects */
 .card {
   position: relative;
   overflow: hidden;
@@ -68,30 +74,25 @@ html {
   transform: scale(1.1);
 }
 
-.home-button {
-  background-color: white;
-  text-align: center;
+.home-button:hover {
+  background-color: #333;
 }
+
+/* Container for aligning buttons */
 .button-container {
   text-align: center;
   padding: 20px;
 }
 
+/* Footer styles */
 .footer {
   padding: 20px;
   background-color: #a91d3a;
   text-align: center;
   font-weight: 600;
-  color: navajowhite;
-  font-family: "Merriweather", serif;
-  padding-bottom: 50px;
-}
-
-.footer button {
-  background-color: black;
-  padding: 10px;
-  margin-top: 18px;
-  border-radius: 10px;
+  color: white;
+  padding-bottom: 30px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .loader-container {
@@ -102,4 +103,38 @@ html {
   height: 100vh;
   background: #a91d3a;
   font-size: 1.5rem;
+}
+
+.buttons-container button {
+  background-color: black;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
 }

@@ -1,13 +1,9 @@
-@keyframes expandHeight {
+@keyframes fadeIn {
   0% {
-    height: 0vh;
-  }
-
-  50% {
-    height: 30vh;
+    opacity: 0;
   }
   100% {
-    height: 40vh;
+    opacity: 1;
   }
 }
 
@@ -16,42 +12,37 @@
   background-image: url("https://i.postimg.cc/SNPxZDLz/20240127-015836-0000.png");
   background-size: cover;
   background-position: center;
-  animation: expandHeight 8s ease;
-}
-
-.home-image-container {
   height: 40vh;
-  margin-top: 10px;
-  background-image: url("https://i.postimg.cc/SNPxZDLz/20240127-015836-0000.png");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  transform: translateZ(0);
+  animation: fadeIn 5s ease-in;
 }
 
 .gradient-container h1 {
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 32px;
+  font-size: 28px;
+  color: #921a40;
 }
 
 .gradient-container h2 {
-  font-size: px;
+  font-size: 20px; /* Assuming a default value */
   font-weight: 600;
   font-style: italic;
   font-family: "Merriweather", serif;
 }
 
 .explore-btn {
-  margin-top: 6px;
   background-color: black;
   color: white;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  font-size: 1.2rem;
   position: absolute;
-  left: 45%;
-  top: 45%;
+  left: 40%;
+  top: -30px;
+  height: 80px;
+  width: 80px;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
@@ -62,4 +53,16 @@
 .explore-btn:hover {
   background-color: #921a40;
   color: beige;
+}
+
+@media (max-width: 480px) {
+  .gradient-container {
+    padding: 12px;
+  }
+  .gradient-container h1 {
+    font-size: 20px;
+  }
+  .gradient-container h2 {
+    font-size: 14px;
+  }
 }

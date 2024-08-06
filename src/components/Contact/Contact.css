@@ -1,0 +1,80 @@
+.contact-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  padding: 50px;
+  background-color: black;
+}
+
+.blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(4px);
+}
+
+.blob svg {
+  width: 96%;
+  height: 100%;
+}
+
+.blob:nth-child(2) {
+  filter: blur(50px);
+}
+
+.contact-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  color: #fffae6;
+  font-weight: 500;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.email-card::before,
+.whatsapp-card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 95, 109, 0.8),
+    rgba(255, 195, 113, 0.8)
+  );
+  opacity: 0.5;
+  transition: transform 0.5s;
+}
+
+.email-card:hover::before {
+  transform: scale(1.2);
+}
+
+.whatsapp-card:hover::before {
+  transform: scale(1.2);
+}

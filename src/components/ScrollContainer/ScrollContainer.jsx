@@ -5,6 +5,8 @@ import { WavyBackground } from "../ui/wavy-background";
 import { images } from "../../assets/imagesArray";
 import { useNavigate } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner";
+import { FaEnvelope } from "react-icons/fa"; // Import the envelope icon
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -27,7 +29,7 @@ const ScrollContainer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -69,9 +71,15 @@ const ScrollContainer = () => {
             <div className="footer">
               <p className="footer-text">Photographs by Hevit Aron</p>
               <p className="footer-text">All Rights Reserved ©</p>
-              <button className="home-button" onClick={() => navigate("/")}>
-                Home
-              </button>
+              <div className="buttons-container">
+                <button onClick={() => navigate("/")}>Home</button>
+                <button
+                  className="contact-button"
+                  onClick={() => navigate("/contact")}
+                >
+                  <FaEnvelope className="contact-icon" />
+                </button>
+              </div>
             </div>
           </>
         )}
